@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>NFT KNOX</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+   <!-- Favicons -->
+    <link href="assets/img/logo/favicon.ico" rel="icon" />
+    <link href="assets/img/logo/favicon.ico" rel="apple-touch-icon" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/all.css" />
+
+
+
+  <style>
+    .form-control:focus,
+    .form-select:focus {
+      border-color: #6a3595;
+      box-shadow: 0 0 0 0.25rem rgb(125 79 163 / 25%);
+    }
+
+    .register-header,
+    .register-form {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo">
+        <a href="index.html"><img src="./assets/img/logo/logo-large-gold.png" alt="NftKnox Logo" /></a>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/how-it-works.html">How it Works?</a></li>
+              <li>
+                <a href="/social-responsibility.html">Social Responsibility</a>
+              </li>
+              <li><a href="/#editions" class="scrollto">Editions</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/"><span>Platform</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/register-wallet.html">Register Wallet</a></li>
+              <li><a href="/create-listing.html">Create Listing</a></li>
+              <li><a href="/redeem.html">Redeem NFT</a></li>
+              <li><a href="/proofs.html">PROOFs</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="/#team">Team</a></li>
+
+          <li>
+            <a class="nav-link scrollto" href="/white-paper.html">White Paper</a>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
+  <main id="main" class="bg-purple-with-heading">
+    <!-- ======= Register Wallet Section ======= -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="zoom-in" data-aos-delay="150">
+            <div class="section-title">
+              <h2 class="my-4">
+                Blockchain Mailing Address Registration
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adding a box with text -->
+      <section class="container mb-5">
+        <div class="row">
+          <div class="col-lg-6 col-12 mx-auto">
+            <div class="card register-header">
+              <div class="card-body">
+                <p>To provide foolproof accuracy of where we ship the asset in the event of a redemption, we ask you to
+                  confirm your physical mailing address by way of signing with your <a style="text-decoration: none;"
+                    href="https://metamask.io/download/">MetaMask </a> wallet as a first step. Once completed, this data
+                  is stored and connected to your wallet - with a two-step verification process to validate the mailing
+                  address at the time of redemption.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mb-5">
+        <div class="row">
+          <div class="col-lg-6 col-12 mx-auto">
+            <div class="card register-header">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Step 1: Connect your Metamask Wallet!
+                </h4>
+
+                <button class="theme-btn btn btn-lg w-100 my-3" id="connectButton">
+                  Connect
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row">
+
+          <div class=" col-lg-6  col-12 mx-auto">
+            <div class="card full-width register-form">
+              <div class="card-body">
+                <h4>
+                  Step 2: Securely Sign your Mailing Address (free)
+                </h4>
+                <div class="mb-3 form-group">
+                  <label for="nameInput" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameInput">
+                </div>
+
+                <div class="mb-3 form-group">
+                  <label for="streetInput" class="form-label">Street</label>
+                  <input type="text" class="form-control" id="streetInput">
+                </div>
+
+                <div class="mb-3 form-group">
+                  <label for="countryInput" class="form-label">Country</label>
+                  <input  autocomplete="off" type="text" list="countryDatalist" class="form-control" id="countryInput" name="country"/>
+                  <datalist id="countryDatalist" >
+                    <option value="country" selected="selected" disabled>Select a Country</option>
+                  </datalist>
+                </div>
+
+                <div class="mb-3 form-group">
+                  <label for="stateInput" class="form-label">State / Province</label>
+                  <input  autocomplete="off" type="text" list="stateDatalist" class='form-control' id="stateInput" name="state"/>
+                  <datalist id="stateDatalist" >
+                    <option value="state" selected="selected" disabled>Select a State</option>
+                  </datalist>
+                </div>
+
+                <div class="mb-3 form-group">
+                  <label for="cityInput" class="form-label">City / Town</label>
+                  <input  autocomplete="off" type="text" list="cityDatalist" class='form-control' id="cityInput" name="city"/>
+                  <datalist id="cityDatalist" >
+                    <option value="city" selected="selected" disabled>Select a City</option>
+                  </datalist>
+                </div>
+
+
+                <!-- <div class="mb-3 form-group">
+                  <label for="stateInput">State</label>
+                  <datalist  class="form-select" id="stateInput" name="state">
+                    <option value="state" selected="selected" disabled>Select a State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </datalist>
+
+
+                </div> -->
+
+                <div class="mb-3 form-group">
+                  <label for="zipInput" class="form-label">Zip Code / Postal Code</label>
+                  <input type="text" class="form-control" id="zipInput">
+                </div>
+
+                <div class="mb-3 form-group">
+                  <label for="phoneInput" class="form-label">Mobile Phone Number</label>
+                  <input type="text" class="form-control" id="phoneInput">
+                </div>
+
+                <div class="mb-3 form-group">
+                  <label for="emailInput" class="form-label">Email *required</label>
+                  <input type="text" class="form-control" id="emailInput" required> 
+                </div>
+
+
+
+
+                <button class="theme-btn btn btn-primary btn-lg w-100 mb-3" id="signTypedDataV4">
+                  Securely Sign Mailing Address
+                </button>
+
+                <p class="info-text alert alert-warning">
+                  Status:
+                  <span id="signTypedDataV4Result"></span>
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Register Wallet  Section -->
+  </main>
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright-wrap d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>NFT Knox</span></strong> 2022. All
+          Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/theNFTKnox" class="twitter"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/thenftknox/" class="instagram"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://nftknox.medium.com/" class="medium"
+          ><i class="bx bxl-medium"></i
+        ></a>
+        <a href="https://t.me/NFT_Knox" class="telegram"
+          ><i class="bx bxl-telegram"></i
+        ></a>
+        <a href="https://discord.com/invite/Nm7CEbx9C7" class="discord"
+          ><i class="bx bxl-discord-alt"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="assets/js/country.js"></script>
+  <script src="assets/js/bundle.js"></script>
+</body>
+
+</html>
